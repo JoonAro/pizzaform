@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width">
+    <title>Papa Don's Traditional Pizzeria</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Papa Don's Traditional Pizzeria</h1>
+    <div id="container">
+      <div class="form-wrap">
+        <form>
+            <div class="form-group">
+                <!-- <label for="name">Name</label> -->
+                <!-- <input type="text" name="name" id="name" placeholder="Your name here"> -->
+
+            </div>
+             <table class="size">
+                <thead>
+                    <tr>
+                        <td>Size</td>
+                        <td>Servings</td>
+                        <td>Price</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Small</td>
+                        <td>2</td>
+                        <td>7,50€</td>
+                        <td><input type="radio" name="radio" id="serving2" onchange="priceCalc()"></td>
+                    </tr>
+                    <tr>
+                        <td>Medium</td>
+                        <td>4</td>
+                        <td>10,50€</td>
+                        <td><input type="radio" name="radio" id="serving4" onchange="priceCalc()"></td>
+                    </tr>
+                    <tr></td>
+                    </tr>
+                    <tr>
+                        <td>Large</td>
+                        <td>6</td>
+                        <td>12,50€</td>
+                        <td><input type="radio" name="radio" id="serving6" onchange="priceCalc()"></td>
+                    </tr>
+                    <tr></td>
+                    </tr> 
+                    <tr>
+                        <td>XL</td>
+                        <td>8</td>
+                        <td>15,50€</td>
+                        <td><input type="radio" name="radio" id="serving8" onchange="priceCalc()"></td>
+                    </tr>
+                    <tr></td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    <h2>Choose the toppings. 4 toppings for no additional cost. Want more? it's only 0,50€ extra for each</h2>
+                    <table id="toppings">
+                    <thead>
+                        
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><label><input type="checkbox" id="topping1" onchange="priceCalc()">Salami</label></td>
+                        <td><label><input type="checkbox" id="topping2" onchange="priceCalc()">Ham</label></td>
+                        <td><label><input type="checkbox" id="topping3" onchange="priceCalc()">Bacon</label></td>
+                        <td><label><input type="checkbox" id="topping4" onchange="priceCalc()">Onion</label></td>
+                    </tr>
+                    <tr>
+                        <td><label><input type="checkbox" id="topping5" onchange="priceCalc()">Paprika</label></td>
+                        <td><label><input type="checkbox" id="topping6" onchange="priceCalc()">Garlic</label></td>
+                        <td><label><input type="checkbox" id="topping7" onchange="priceCalc()">Champignon</label></td>
+                        <td><label><input type="checkbox" id="topping8" onchange="priceCalc()">Blue cheese</label></td>
+                    </tr>
+                    <tr>
+                        <td><label><input type="checkbox" id="topping9" onchange="priceCalc()">Tomato</label></td>
+                        <td><label><input type="checkbox" id="topping10" onchange="priceCalc()">Tuna</label></td>
+                        <td><label><input type="checkbox" id="topping11" onchange="priceCalc()">Chili</label></td>
+                        <td><label><input type="checkbox" id="topping12" onchange="priceCalc()">Pineapple</label></td>
+                    </tr>
+                    
+                    
+                    
+                </tbody>
+            </table>
+            <div class="dropdown">
+                <button onclick="priceCalc()" class="dropButton">Delivery method</button>
+                <div id="mydropdown" class="dropdown-content">
+                    <label><input type="radio" name=deliveryChoice id="restaurant0" onchange="priceCalc()" checked><a href="#restaurant" >Eat at restaurant</a></label>
+                    <label><input type="radio" name=deliveryChoice id="pickup0" onchange="priceCalc()"><a href="#pickup">Pick up from restaurant</a></label>
+                    <label><input type="radio" name=deliveryChoice id="delivery5" onchange="priceCalc()"><a href="#delivery">Delivery 5.00€</a></label>
+                </div>
+                
+                
+                
+            </div>
+            <div>
+                <div id="priceBox">
+                    <p>Total price:</p>
+           <p id="priceDisplay"></p>
+            </div>
+        </div>
+            <div>
+           <div id="priceBox2">
+            <p id="priceDisplay2"></p>
+
+           </div>
+            </div>
+        
+          
+
+
+
+        </form>
+      
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

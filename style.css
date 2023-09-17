@@ -1,0 +1,77 @@
+* {
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgb(217, 136, 31);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:antiquewhite;
+}
+
+#container {
+    background-color: chocolate;
+    margin: 50px auto;
+    width: 600px;
+    height: 1000px;
+}
+
+table, tr, td {
+    padding: 5px;
+    margin:20px;
+    text-align: center;
+}
+
+td {
+    width:200px;
+}
+
+thead {
+    font-size:x-large;
+    padding: 20px;
+}
+
+.dropdown {
+    position:relative;
+    display:inline-block;
+    
+}
+.dropButton {
+    width: 160px;
+    height: 60px;
+    color:rgba(255, 140, 0, 0.823);
+
+
+}
+.dropdown-content {
+    display:none;
+    position: absolute;
+
+}
+.dropdown-content a {
+    color: green;
+    padding: 12px 16px;
+    display:block;
+    width: 160px;
+    height: 60px;
+}
+.dropdown:hover .dropdown-content {
+    display:block;
+    width: 160px;
+    height: 250px;
+    background-color:rgba(255, 195, 123, 0.824);
+}
+
+#priceBox {
+    margin: 10px auto;
+    width: 250px;
+    height:200px;
+    background-color: green;
+    font-size: larger;
+    color: white;
+    border-radius: 5%;
+    text-align: center;
+    padding:30px;
+    
+}
